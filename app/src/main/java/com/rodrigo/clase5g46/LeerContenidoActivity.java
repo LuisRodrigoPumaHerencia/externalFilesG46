@@ -62,6 +62,8 @@ public class LeerContenidoActivity extends AppCompatActivity {
     public void pedirPermisos(){
         if(ContextCompat.checkSelfPermission(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
             if(ActivityCompat.shouldShowRequestPermissionRationale(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE)){
+
+
             }else{
                 ActivityCompat.requestPermissions(LeerContenidoActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1000);
             }
